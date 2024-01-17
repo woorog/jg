@@ -1,4 +1,4 @@
-
+import heapq
 import sys
 from collections import deque
 
@@ -23,39 +23,25 @@ from collections import deque
 #direction_changes = dict(sys.stdin.readline().split() for _ in range(l))
 # 키 값 딕셔너러리로 받는법.
 
-import heapq
+from heapq import *
 
-import heapq
+num = int(sys.stdin.readline())
+listnum = [int(sys.stdin.readline().strip()) for _ in range(num)]
+heap=[]
 
-def find_medians(nums):
-    max_heap = []  # 작은 값들을 저장하는 최대 힙
-    min_heap = []  # 큰 값들을 저장하는 최소 힙
-    result = []
-
-    for num in nums:
-        if not max_heap or -max_heap[0] >= num:
-            heapq.heappush(max_heap, -num)
+for i in range(num):
+    if listnum[i]==0:
+        if len(heap)==0:
+            print(0)
         else:
-            heapq.heappush(min_heap, num)
-
-        if len(max_heap) > len(min_heap) + 1:
-            heapq.heappush(min_heap, -heapq.heappop(max_heap))
-        elif len(min_heap) > len(max_heap):
-            heapq.heappush(max_heap, -heapq.heappop(min_heap))
-
-        result.append(-max_heap[0])
+            smallest = heapq.heappop(heap)
+            print(smallest)
+    else:
+        heappush(heap,listnum[i])
 
 
 
-        # 현재 최대 힙과 최소 힙의 상태를 출력합니다.
-        print("Max Heap:", [-x for x in max_heap])  # 최대 힙의 원래 값들
-        print("Min Heap:", min_heap)
-        print("Current Median:", result[-1])
-        print("----------------------")
 
-    return result
 
-# 테스트 데이터
-nums = [1, 5, 2, 10, -99, 7,]
-
-medians = find_medians(nums)
+#
+# print(popnum)
