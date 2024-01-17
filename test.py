@@ -24,24 +24,28 @@ from collections import deque
 # 키 값 딕셔너러리로 받는법.
 
 from heapq import *
+def max_people(n, positions, d):
 
-num = int(sys.stdin.readline())
-listnum = [int(sys.stdin.readline().strip()) for _ in range(num)]
-heap=[]
-
-for i in range(num):
-    if listnum[i]==0:
-        if len(heap)==0:
-            print(0)
-        else:
-            smallest = heapq.heappop(heap)
-            print(smallest)
-    else:
-        heappush(heap,listnum[i])
+    max_people = 0
 
 
+    for i in range(n):
+        count = 0
+        start_point = positions[i][0]
+        end_point = start_point + d
 
 
+        for hi, oi in positions:
+            if start_point <= hi <= end_point and start_point <= oi <= end_point:
+                count += 1
 
-#
-# print(popnum)
+        max_people = max(max_people, count)
+
+    return max_people
+
+n = int(sys.stdin.readline())
+positions = [list(map(int, sys.stdin.readline().split())) for _ in range(n)]
+d = int(sys.stdin.readline())
+
+
+print(max_people(n, positions, d))
