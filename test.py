@@ -56,6 +56,6 @@ def find_medians(nums):
     return result
 
 # 테스트 데이터
-nums = [1, 5, 2, 10, -99, 7, 5,7]
+nums = [1, 5, 2, 10, -99, 7,]
 
 medians = find_medians(nums)
