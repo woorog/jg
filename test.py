@@ -6,12 +6,14 @@ from collections import deque
 # a = [1, 2, 3, 4, 5]
 #
 
+
+
 # 여러 문장.
 # n = input()
 # a = [sys.stdin.readline() for i in range(n)]
 # a = ["1 2 3", "4 5 6"]
 
-# 앞으로의 코딩 입력 방식.
+# 앞으로의 코딩 입력 방식. dd
 
 
 # listnum= list(map(int, sys.stdin.readline().split())) 한줄에 입력받는법
@@ -54,6 +56,6 @@ def find_medians(nums):
     return result
 
 # 테스트 데이터
-nums = [1, 5, 2, 10, -99, 7, 5]
+nums = [1, 5, 2, 10, -99, 7, 5,7]
 
 medians = find_medians(nums)
