@@ -47,86 +47,49 @@
 # r-길이 튜플들, 정렬된 순서, 반복되는 요소 없음
 #
 # heapq 사용법  heapq.heappop(heap) heappush(heap,12)
-from heapq import *
-import sys
-import heapq
-from itertools import combinations
 
-# num = int(sys.stdin.readline())
-# a = num
-# ans = -1
-#
-# cnt = 0
-# # 같을때까지 반복하기
-# while ans != num:
-#     front = int(a / 10)
-#     behind = a % 10
-#     temp = front + behind
-#     ans = behind * 10 + (temp % 10)
-#
-#     cnt += 1
-#     a = ans
-#
-# print(cnt)
+import  sys
+
+class Graph:
+    def __init__(self):
+        self.graph = {}
+
+    #이 부분이 출력을 위해 문자열로 반환 시키는 함수
+    def __str__(self):
+        return str(self.graph)
+
+    #Graph 클래스의 인스턴스를 생성할 때 __init__ 메소드가 호출되어 self.graph를 빈 딕셔너리로 초기화합니다.
+    # 이렇게 함으로써 Graph 객체는 그래프의 모든 노드와 각 노드의 인접 리스트를 저장할 준비가 됩니다.
+
+    def add_edge(self, u, v):
+        if u in self.graph:
+            self.graph[u].append(v)
+        else:
+            self.graph[u] = [v]
+        if v in self.graph:
+            self.graph[v].append(u)
+        else:
+            self.graph[v] = [u]
 
 
-# from collections import deque
-#
-# def bfs(root):
-#     if root is None:
-#         return
-#
-#     queue = deque([root])
-#
-#     while queue:
-#         node = queue.popleft()
-#         print(node.value)  # 현재 노드 처리
-#         if node.left:
-#             queue.append(node.left)
-#         if node.right:
-#             queue.append(node.right)
-#
-# def dfs(node):
-#     if node is None:
-#         return
-#
-#     print(node.value)  # 현재 노드 처리
-#     dfs(node.left)  # 왼쪽 서브트리 탐색
-#     dfs(node.right)  # 오른쪽 서브트리 탐색
-#
-# class TreeNode:
-#     def __init__(self, value):
-#         self.value = value
-#         self.left = None
-#         self.right = None
-#
-#     def insert(self, value,value2):
-#         if value < self.value:
-#             if self.left is None: # 왼쪽 자식이 없는 경우의 처리
-#                 self.left = TreeNode(value)
-#             else:
-#                 self.left.insert(value)
-#         else:
-#             if self.right is None:   # 오른쪽 자식이 없는 경우의 처리
-#                 self.right = TreeNode(value)
-#             else:
-#                 self.right.insert(value)
-# # 문제
-#
-#
-# root = TreeNode(1)
-# root.insert(1,2)
-# root.insert(1,3)
-# root.insert(1,4)
-# root.insert(2,4)
-# root.insert(3,4)
-#
-# print(TreeNode)
-#
-# print("BFS:")
-# bfs(root)
-#
-# print("\nDFS:")
-# dfs(root)
+        # #이거 없어도 bfs dfs 맞는데 출력 형식에는 작은게 먼저 선택 된 경우라 이렇게 함. 받을때마다 정렬
+        # self.graph[u].sort()
+        # self.graph[v].sort()
+
+# 예제 그래프 생성
+g = Graph()
+
+listnum= list(map(int, sys.stdin.readline().split()))
+for _ in range(listnum[1]):
+    edge=list(map(int, sys.stdin.readline().split()))
+    g.add_edge(edge[0],edge[1])
+
+
+# 왜 그냥 출력이 안되는가?
+#정수로만 구성된 입력을 받는다고 해도, Graph 클래스의 인스턴스를 print 함수로 출력할 때는
+# 해당 인스턴스를 어떻게 문자열로 표현할지 정의해야 합니다. Python에서 객체를 문자열로 출력하려면,
+# 객체가 문자열 표현을 제공해야 하며, 이는 __str__ 또는 __repr__ 매직 메소드를 구현함으로써 가능합니다.
+
+print(g)
 
 
