@@ -51,7 +51,8 @@ def bfs(graph, start):
 
 def dfs(graph, start, visited=None):
     if visited is None:
-        visited = set()
+        visited = set() #중복을 허용하지 않는 set 을 사용해 넣어줌
+
 
     visited.add(start)
     print(start, end=' ')
