@@ -26,6 +26,7 @@ class graph:
 
 
 
+
 g=graph()
 
 g.insert_edge(1,2)
