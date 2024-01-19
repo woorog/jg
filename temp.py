@@ -14,8 +14,24 @@ class graph:
             self.graph[m].append(n)
         else:
             self.graph[m]=[n]
-# def dfs(graph,start,visited=None):
-#
+
+
+def dfs(graph,start,visited=None):
+    if visited is None:
+        visited=set()
+
+    visited.add(start)
+    print(start,end=' ')
+
+
+    for next in graph[start]:
+        if next not in visited:
+            dfs(graph,next,visited)
+
+
+
+def bfs(graph,start,visited=None):
+    visited=set()
 
 
 
@@ -28,6 +44,6 @@ gp.insert_graph(1,4)
 gp.insert_graph(1,5)
 gp.insert_graph(2,6)
 
-#print(gp.graph.get(2))
+print(gp.graph.get(2))
 #print(gp:3)
 

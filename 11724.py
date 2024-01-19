@@ -2,33 +2,16 @@ import sys
 from collections import deque
 sys.setrecursionlimit(10 ** 6)
 class Graph:
-    def __init__(self):
-        self.graph = {}
-
-    #Graph 클래스의 인스턴스를 생성할 때 __init__ 메소드가 호출되어 self.graph를 빈 딕셔너리로 초기화합니다.
-    # 이렇게 함으로써 Graph 객체는 그래프의 모든 노드와 각 노드의 인접 리스트를 저장할 준비가 됩니다.
+    def __init__(self, num_vertices):
+        self.graph = {i: [] for i in range(1, num_vertices + 1)}
 
     def add_edge(self, u, v):
-        if u in self.graph:
-            self.graph[u].append(v)
-        else:
-            self.graph[u] = [v]
-        if v in self.graph:
-            self.graph[v].append(u)
-        else:
-            self.graph[v] = [u]
+        self.graph[u].append(v)
+        self.graph[v].append(u)
 
+        # self.graph[u].sort()
+        # self.graph[v].sort()
 
-        #이거 없어도 bfs dfs 맞는데 출력 형식에는 작은게 먼저 선택 된 경우라 이렇게 함. 받을때마다 정렬
-        self.graph[u].sort()
-        self.graph[v].sort()
-
-# 예제 그래프 생성
-g = Graph()
-listnum= list(map(int, sys.stdin.readline().split()))
-for _ in range(listnum[1]):
-    edge=list(map(int, sys.stdin.readline().split()))
-    g.add_edge(edge[0],edge[1])
 
 
 
@@ -67,12 +50,20 @@ def connected_components(graph):
 
     for vertex in graph:
         #print(vertex)
+        # 이 과정에서 아직 방문하지 않은 정점을 찾을 때마다 연결 요소의 수를 하나씩 증가시킵니다.
         if vertex not in visited:
             dfs(graph, vertex, visited)
             count += 1
 
     return count
 
+# 예제 그래프 생성
+listnum= list(map(int, sys.stdin.readline().split()))
+g = Graph(listnum[0])
+
+for _ in range(listnum[1]):
+    edge=list(map(int, sys.stdin.readline().split()))
+    g.add_edge(edge[0],edge[1])
 print(connected_components(g.graph))
 
 
