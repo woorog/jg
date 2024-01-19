@@ -8,9 +8,9 @@ class Graph:
     def add_edge(self, u, v):
         self.graph[u].append(v)
         self.graph[v].append(u)
-
-        self.graph[u].sort()
-        self.graph[v].sort()
+        #
+        # self.graph[u].sort()
+        # self.graph[v].sort()
 
 # 예제 그래프 생성
 

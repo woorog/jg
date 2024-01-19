@@ -10,20 +10,26 @@ class Graph:
         #self.graph[v].append(u)
 
 
+#다익스트라는 bfs 에서 무엇이 추가된 것일까?
 
-def dijkstra(graph, start, K):
-    distances = {node: float('inf') for node in graph.graph}
+#하나의 최단 거리를 구할 때, 그 이전까지 구했던 최단 거리 정보를 그대로 사용한다.
+def bfs_dijkstra(g, start, K):
+    distances = {node: float('inf') for node in g.graph}
     distances[start] = 0
+
     queue = deque([start])
 
     while queue:
         vertex = queue.popleft()
 
-        for neighbor in graph.graph[vertex]:
-            new_distance = distances[vertex] + 1
-            if new_distance < distances[neighbor]:
-                distances[neighbor] = new_distance
-                queue.append(neighbor)
+        for neighbor in g.graph[vertex]:  # 현재 노드(vertex)에 연결된 모든 이웃 노드(neighbor)에 대하여 반복
+            new_distance = distances[vertex] + 1  # 이웃 노드까지의 새로운 거리 계산 (현재 노드까지의 거리 + 1)
+            print(distances)
+            if new_distance < distances[neighbor]:  # 새로운 거리가 기존에 저장된 거리보다 작은지 확인
+                distances[neighbor] = new_distance  # 새로운 거리가 더 작다면, 이웃 노드까지의 거리를 업데이트
+                queue.append(neighbor)  # 업데이트된 거리를 가진 이웃 노드를 큐에 추가 (추후 탐색을 위해)
+
+
 
 
     result = []
@@ -44,10 +50,12 @@ for _ in range(M):
     g.add_edge(A, B)
 
 # 다익스트라 알고리즘 실행
-result = dijkstra(g, X, K)
+result = bfs_dijkstra(g, X, K)
 
 if result:
     for city in result:
         print(city)
 else:
     print(-1)
+
+print(g.graph)

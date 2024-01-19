@@ -1,6 +1,5 @@
 import sys
 from collections import deque
-sys.setrecursionlimit(10 ** 6)
 class Graph:
     def __init__(self, num_vertices):
         self.graph = {i: [] for i in range(1, num_vertices + 1)}
@@ -60,7 +59,5 @@ g = Graph(listnum[0])
 for _ in range(listnum[1]):
     edge=list(map(int, sys.stdin.readline().split()))
     g.add_edge(edge[0],edge[1])
-
-print(g.graph)
 
 

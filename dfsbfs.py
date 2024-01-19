@@ -64,7 +64,7 @@ def dfs(graph, start, visited=None):
 # DFS 실행
 
 dfs(g.graph, listnum[2])
-print()
+print(g.graph)
 # BFS 실행
 
 bfs(g.graph, listnum[2])
