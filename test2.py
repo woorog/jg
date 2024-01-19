@@ -1,78 +1,33 @@
-import sys
 from collections import deque
-sys.setrecursionlimit(10 ** 6)
-class Graph:
-    def __init__(self):
-        self.graph = {}
 
-    #Graph 클래스의 인스턴스를 생성할 때 __init__ 메소드가 호출되어 self.graph를 빈 딕셔너리로 초기화합니다.
-    # 이렇게 함으로써 Graph 객체는 그래프의 모든 노드와 각 노드의 인접 리스트를 저장할 준비가 됩니다.
-
-    def add_edge(self, u, v):
-        if u in self.graph:
-            self.graph[u].append(v)
-        else:
-            self.graph[u] = [v]
-        if v in self.graph:
-            self.graph[v].append(u)
-        else:
-            self.graph[v] = [u]
-
-
-        #이거 없어도 bfs dfs 맞는데 출력 형식에는 작은게 먼저 선택 된 경우라 이렇게 함. 받을때마다 정렬
-        self.graph[u].sort()
-        self.graph[v].sort()
-
-# 예제 그래프 생성
-g = Graph()
-listnum= list(map(int, sys.stdin.readline().split()))
-for _ in range(listnum[1]):
-    edge=list(map(int, sys.stdin.readline().split()))
-    g.add_edge(edge[0],edge[1])
-
-
-
-def bfs(graph, start):
-    visited = set()
+def bfs(graph, start, K):
+    distance = [-1] * (len(graph) + 1)  # 각 도시까지의 거리를 저장할 리스트, 초기값은 -1
+    distance[start] = 0
     queue = deque([start])
-    #bfs는 각 함수 호출마다 새로운 visited 집합과 queue를 생성합니다.
-    #popleft(): deque의 메소드로, 큐의 맨 앞에서 요소를 제거하고 반환합니다
-    #vertex: 큐에서 꺼낸 현재 탐색할 노드를 저장하는 변수
+
     while queue:
-        vertex = queue.popleft()
-        if vertex not in visited:
-            visited.add(vertex)
-            #print(vertex, end=' ')
+        current = queue.popleft()
 
-            # 인접 노드 중 방문하지 않은 노드를 큐에 추가
-            for node in graph[vertex]:
-                if node not in visited:
-                    queue.append(node)
+        for next in graph[current]:
+            if distance[next] == -1:  # 아직 방문하지 않은 도시인 경우
+                distance[next] = distance[current] + 1
+                queue.append(next)
 
-def dfs(graph, start, visited=None):
-    if visited is None:
-        visited = set() #중복을 허용하지 않는 set 을 사용해 넣어줌 visited 집합을 재귀 호출에서 공유하기 위함
+    return [city for city, dist in enumerate(distance) if dist == K]
 
-    visited.add(start)
-    #print(start, end=' ')
+# 입력 처리
+N, M, K, X = map(int, input().split())
+graph = [[] for _ in range(N + 1)]
 
-    for next in graph[start]:
-        if next not in visited:
-            dfs(graph, next, visited)
+for _ in range(M):
+    A, B = map(int, input().split())
+    graph[A].append(B)
 
-def connected_components(graph):
-    visited = set()
-    count = 0
-    #vertex 는 정점.
+# BFS 실행 및 결과 출력
+result = bfs(graph, X, K)
 
-    for vertex in graph:
-        #print(vertex)
-        if vertex not in visited:
-            dfs(graph, vertex, visited)
-            count += 1
-
-    return count
-
-print(connected_components(g.graph))
-
-
+if result:
+    for city in sorted(result):
+        print(city)
+else:
+    print(-1)

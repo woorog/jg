@@ -9,8 +9,6 @@ class Graph:
         self.graph[u].append(v)
         self.graph[v].append(u)
 
-        # self.graph[u].sort()
-        # self.graph[v].sort()
 
 
 
@@ -18,9 +16,7 @@ class Graph:
 def bfs(graph, start):
     visited = set()
     queue = deque([start])
-    #bfs는 각 함수 호출마다 새로운 visited 집합과 queue를 생성합니다.
-    #popleft(): deque의 메소드로, 큐의 맨 앞에서 요소를 제거하고 반환합니다
-    #vertex: 큐에서 꺼낸 현재 탐색할 노드를 저장하는 변수
+
     while queue:
         vertex = queue.popleft()
         if vertex not in visited:
@@ -64,6 +60,7 @@ g = Graph(listnum[0])
 for _ in range(listnum[1]):
     edge=list(map(int, sys.stdin.readline().split()))
     g.add_edge(edge[0],edge[1])
-print(connected_components(g.graph))
+
+print(g.graph)
 
 
