@@ -10,7 +10,7 @@ class Graph:
         #self.graph[v].append(u)
 
 
-#다익스트라는 bfs 에서 무엇이 추가된 것일까?
+#다익스트라는 bfs 에서 무엇이 추가된 것일까
 
 #하나의 최단 거리를 구할 때, 그 이전까지 구했던 최단 거리 정보를 그대로 사용한다.
 def bfs_dijkstra(g, start, K):
@@ -52,10 +52,3 @@ for _ in range(M):
 # 다익스트라 알고리즘 실행
 result = bfs_dijkstra(g, X, K)
 
-if result:
-    for city in result:
-        print(city)
-else:
-    print(-1)
-
-print(g.graph)
