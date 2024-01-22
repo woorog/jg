@@ -16,14 +16,15 @@ def bfs():
         if x == N - 1 and y == N - 1:  # 마지막 방문했을때.
             return visited[x][y]
         for k in range(4):
-            nx,ny=dx[k],dy[k]
-            if 0<=nx<N and 0<=ny<N and visited[nx][ny]==-1:
-                if maze[nx][ny] == 1:
-                    queue.appendleft((nx,ny))
-                    visited[nx][ny]=visited[x][y]
+            kx,ky=x+dx[k],y+dy[k]
+            if 0<=kx<N and 0<=ky<N and visited[kx][ky]==-1:
+                if maze[kx][ky]==1: #흰방일때
+                    queue.appendleft((kx,ky))
+                    print()
+                    visited[kx][ky]=visited[x][y]
                 else:
-                    queue.append((nx,ny))
-                    visited[nx][ny]=visited[x][y]+1
+                    queue.append((kx,ky))
+                    visited[kx][ky]=visited[x][y]+1
         #그럼 마지막 방문했을때 가장 최솟값이 나오는 파이썬식 최솟값 구하기.
 
 #appendleft는 deque의 왼쪽 끝에 원소를 추가
@@ -37,6 +38,7 @@ N = int(sys.stdin.readline())
 maze = []
 dx = [0, 1, 0, -1]
 dy = [1, 0, -1, 0]
+
 for i in range(N):
     maze.append(list(map(int, input().strip())))
 

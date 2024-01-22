@@ -22,6 +22,7 @@ def bfs():
                 if maze[nx][ny] == 1:  # 흰방일때 탐색을 우선 하기 위해 앞에다가 추가
                     queue.appendleft((nx, ny))
                     visited[nx][ny] = visited[x][y]
+                    print(queue)
                 else:
                     queue.append((nx, ny)) #검은방
                     visited[nx][ny] = visited[x][y] + 1
