@@ -72,6 +72,7 @@ for i in range(H):
             else:
                 max_day = max(max_day, visited[i][j][k])
 
+
 if iszero == 1:
     print(-1)
 else:
