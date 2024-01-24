@@ -5,18 +5,23 @@ max = [-float("inf")]
 
 def dfs(calDict: dict, num_list: list[int], start: int, result: int) -> int:
 
-
     for i in range(4):
+
         if sum(calDict.values()) == 0:
             if result < min[0]:
                 min[0] = result
             if result > max[0]:
                 max[0] = result
+
+            break
+
         else:
+
             if calDict[i] == 0:
                 continue
             else:
-                temp=result
+
+                temp = result
                 if i == 0:
                     temp += num_list[start]
                 elif i == 1:
@@ -24,12 +29,17 @@ def dfs(calDict: dict, num_list: list[int], start: int, result: int) -> int:
                 elif i == 2:
                     temp *= num_list[start]
                 elif i == 3:
-                    temp //= num_list[start]
+                    if temp < 0:
+                        temp //= -num_list[start]
+                        temp = -temp
+                    else:
+                        temp //= num_list[start]
 
                 calDict[i] -= 1
                 dfs(calDict, num_list, start + 1, temp)
                 calDict[i] += 1
-
+            #내가 왜 틀렸냐면 result 로 값을 넘겨주면 다음 재귀에서 값이 변하기때문에 temp 를 만들어서 넣어줘야함.
+            #태훈이가 도움을 많이 줌.
 
 if __name__ == "__main__":
     N = int(sys.stdin.readline())
@@ -42,10 +52,7 @@ if __name__ == "__main__":
     for i in range(4):
         calDict[i] = cal_list[i]
 
-    for i in range(4):
-        if calDict[i] != 0:
-            dfs(calDict, num_list, 1, num_list[0])
+    dfs(calDict, num_list, 1, num_list[0])
 
-
-    print(min)
-    print(max)
+    print(max[0])
+    print(min[0])

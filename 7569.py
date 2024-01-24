@@ -14,6 +14,9 @@ def bfs_modified(box):
                 elif box[i][l][k] == -1:
                     visited[i][l][k] = 0
 
+    print(visited)
+    print(queue)
+
     while queue:
         z, y, x = queue.popleft()
 
@@ -64,6 +67,8 @@ box = [[list(map(int, sys.stdin.readline().split())) for _ in range(N)] for _ in
 visited = bfs_modified(box)
 max_day = 0
 iszero = 0
+print(visited)
+
 for i in range(H):
     for j in range(N):
         for k in range(M):

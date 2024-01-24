@@ -29,7 +29,7 @@
 
 # 앞으로의 코딩 입력 방식. dd
 
-
+#M, N, H = (map(int, sys.stdin.readline().split()))
 # listnum= list(map(int, sys.stdin.readline().split())) 한줄에 입력받는법
 # listnum = [int(sys.stdin.readline().strip()) for _ in range(9)]   백준식 입력받기... 이게 하나씩됨
 # num = int(sys.stdin.readline()) 한개만
@@ -48,48 +48,22 @@
 #
 # heapq 사용법  heapq.heappop(heap) heappush(heap,12)
 
-import  sys
+from itertools import *
+import sys
+num = []
 
-class Graph:
-    def __init__(self):
-        self.graph = {}
+listp=["x","/","%"]
 
-    #이 부분이 출력을 위해 문자열로 반환 시키는 함수
-    def __str__(self):
-        return str(self.graph)
+printList = list(product(*listp))
+print(printList)
 
-    #Graph 클래스의 인스턴스를 생성할 때 __init__ 메소드가 호출되어 self.graph를 빈 딕셔너리로 초기화합니다.
-    # 이렇게 함으로써 Graph 객체는 그래프의 모든 노드와 각 노드의 인접 리스트를 저장할 준비가 됩니다.
+# for sumlist in printList:
+#     ans = []
+#     if sum(sumlist) == 100:
+#         ans = sorted(sumlist)
+#         for i in ans:
+#             print(i)
+#         break
 
-    def add_edge(self, u, v):
-        if u in self.graph:
-            self.graph[u].append(v)
-        else:
-            self.graph[u] = [v]
-        if v in self.graph:
-            self.graph[v].append(u)
-        else:
-            self.graph[v] = [u]
-
-
-        # #이거 없어도 bfs dfs 맞는데 출력 형식에는 작은게 먼저 선택 된 경우라 이렇게 함. 받을때마다 정렬
-        # self.graph[u].sort()
-        # self.graph[v].sort()
-
-# 예제 그래프 생성
-g = Graph()
-
-listnum= list(map(int, sys.stdin.readline().split()))
-for _ in range(listnum[1]):
-    edge=list(map(int, sys.stdin.readline().split()))
-    g.add_edge(edge[0],edge[1])
-
-
-# 왜 그냥 출력이 안되는가?
-#정수로만 구성된 입력을 받는다고 해도, Graph 클래스의 인스턴스를 print 함수로 출력할 때는
-# 해당 인스턴스를 어떻게 문자열로 표현할지 정의해야 합니다. Python에서 객체를 문자열로 출력하려면,
-# 객체가 문자열 표현을 제공해야 하며, 이는 __str__ 또는 __repr__ 매직 메소드를 구현함으로써 가능합니다.
-
-print(g)
 
 

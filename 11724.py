@@ -61,3 +61,5 @@ for _ in range(listnum[1]):
     g.add_edge(edge[0],edge[1])
 
 
+
+print(connected_components(g.graph))
