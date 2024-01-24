@@ -1,6 +1,8 @@
 # a = list(map(int, sys.stdin.readline().split()))
 # a = [1, 2, 3, 4, 5]
 #
+import sys
+from itertools import permutations, combinations, combinations_with_replacement
 
 # 문자열 내장 함수 코딩테스트를 위한 Python 정리
 # ▶ lower ▶ upper ▶ find ▶ count
@@ -28,7 +30,6 @@
 # a = ["1 2 3", "4 5 6"]
 
 # 앞으로의 코딩 입력 방식. dd
-
 #M, N, H = (map(int, sys.stdin.readline().split()))
 # listnum= list(map(int, sys.stdin.readline().split())) 한줄에 입력받는법
 # listnum = [int(sys.stdin.readline().strip()) for _ in range(9)]   백준식 입력받기... 이게 하나씩됨
@@ -47,23 +48,23 @@
 # r-길이 튜플들, 정렬된 순서, 반복되는 요소 없음
 #
 # heapq 사용법  heapq.heappop(heap) heappush(heap,12)
+# 받은 수열은 쌍으로 나오는데 어떻게 개별로 출력하게함? ->
+# for combo in a:
+#     print(' '.join(map(str, combo)))
+num,mix= (map(int, sys.stdin.readline().split()))
+listnum=(map(int, sys.stdin.readline().split()))
+nums=[]
+for i in listnum:
+    nums.append(i)
 
-from itertools import *
-import sys
-num = []
-
-listp=["x","/","%"]
-
-printList = list(product(*listp))
-print(printList)
-
-# for sumlist in printList:
-#     ans = []
-#     if sum(sumlist) == 100:
-#         ans = sorted(sumlist)
-#         for i in ans:
-#             print(i)
-#         break
+nums.sort()
 
 
+a=permutations(nums,mix)
+a=sorted(a)
+b=[]
+for combo in a:
+    if combo not in b:
+        b.append(combo)
+        print(' '.join(map(str, combo)))
 
