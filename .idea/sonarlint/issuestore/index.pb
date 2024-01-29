@@ -53,7 +53,11 @@ N
 week2/2573.py,4\5\45efbf5f874615a59e3c249e9a516b9af9e1de28
 8
 code.iml,b\e\beb951213945bb3dc483057da744dbf92f1b5196
-w
-G.idea/sonarlint/issuestore/0/b/0b3e5d9ceed8522d12807afa9be9acc44125ff90,9\9\9961168afdc802963076e85b571edcd2a6e2f6a6
-Å
-Q.idea/sonarlint/securityhotspotstore/0/b/0b3e5d9ceed8522d12807afa9be9acc44125ff90,6\f\6f9e4bb26554909884ba3ba3c5a0dc2dfb42afe5
+A
+week3/2748pivo.py,6\6\66558e8c8eaaa55dbee072050ba114978a462854
+=
+week3/coin.py,6\c\6cb48189894eff19ddb99d9c128964517484057c
+=
+week2/7569.py,8\8\884ce3385eff790a208af40a215b57cb3518b8f6
+B
+week3/aptspaint.py,6\0\60350fca9886b0b10b2f47d82174a408007d8003
