@@ -21,8 +21,6 @@ E
 week2/dfsbfs.py,4\0\407a253880cff478acc6877136f08dc8656d83ed
 >
 week2/test2.py,4\d\4d49dfe36814b48ea9628ace1251361ae9608e26
-@
-week2/dfsbfsG.py,6\c\6c8c7579a6258f983f8eb8fd8bd1f6d1ccc04dbc
 I
 week2/findtreesparents.py,9\a\9a04605b7510140b198c8905ac176b0a3429dab8
 =
@@ -33,11 +31,7 @@ A
 week2/calsplit.py,6\8\683a4e0b0416a254e344e0ab0aa14acb493ecb31
 =
 week2/temp.py,f\b\fb4874b22d82b956df1414c7a8f97d2fca3a14cf
-O
-week2/5639이진검색트리.py,e\d\ed5775f6910a9188a44d77572e52cff2e6f24261
 8
 code.iml,b\e\beb951213945bb3dc483057da744dbf92f1b5196
-A
-week3/2748pivo.py,6\6\66558e8c8eaaa55dbee072050ba114978a462854
 B
 week3/aptspaint.py,6\0\60350fca9886b0b10b2f47d82174a408007d8003
