@@ -1,14 +1,8 @@
 
 >
 week2/14888.py,2\0\2070a13b246b8d006a7aad9f07931fb0e1016f64
-=
-week2/1916.py,9\f\9fd2793dd5495b6ce40d71c1a3d54c350c0d4387
 F
 week2/treetraversal.py,5\3\53d66511b06a9ab12ea9cb17f4358387d80312d5
->
-week2/21606.py,3\f\3f55fccb26b98ec8f485ec37f4f8f8d7730e9bdf
->
-week2/18352.py,7\b\7bf4a05c720dcbcdb4526f8c773791d8acd44476
 >
 week2/11724.py,0\8\081eb1e7276a80b0540724fb343d34f6560ad05c
 =
@@ -23,8 +17,6 @@ E
 week2/escapewater_.py,1\f\1fef1fe97387b5fd8a2e2ca57cb850a590748066
 =
 week2/2294.py,d\3\d324961f60062fa8947af4a72d921575c390bf61
-N
-week2/1504_shortest_path_ab.py,d\b\db9a09f01c0b9b6214181132b548afb68281e9c4
 ?
 week2/dfsbfs.py,4\0\407a253880cff478acc6877136f08dc8656d83ed
 >
@@ -43,17 +35,9 @@ A
 week2/temp.py,f\b\fb4874b22d82b956df1414c7a8f97d2fca3a14cf
 O
 week2/5639이진검색트리.py,e\d\ed5775f6910a9188a44d77572e52cff2e6f24261
-=
-week2/2665.py,4\5\454753fac59b9f9abe8b5a8f25661648dc5af004
-=
-week2/2573.py,4\5\45efbf5f874615a59e3c249e9a516b9af9e1de28
-E
-week2/binarygraph_.py,1\9\190f847eabfd135d3e8e1a3fdaa6c83319b15b5d
 8
 code.iml,b\e\beb951213945bb3dc483057da744dbf92f1b5196
 A
 week3/2748pivo.py,6\6\66558e8c8eaaa55dbee072050ba114978a462854
-=
-week2/7569.py,8\8\884ce3385eff790a208af40a215b57cb3518b8f6
 B
 week3/aptspaint.py,6\0\60350fca9886b0b10b2f47d82174a408007d8003
