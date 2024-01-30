@@ -13,8 +13,6 @@ H
 week2/minspanningtree.py,5\5\551ce5a999dcb297717b6604b7796636213bba9a
 E
 week2/escapewater_.py,1\f\1fef1fe97387b5fd8a2e2ca57cb850a590748066
->
-week2/ployd.py,1\7\1768534cda98e28085db8e936bb21e7da339bc39
 ?
 week2/dfsbfs.py,4\0\407a253880cff478acc6877136f08dc8656d83ed
 >
@@ -55,8 +53,6 @@ N
 code.iml,b\e\beb951213945bb3dc483057da744dbf92f1b5196
 A
 week3/2748pivo.py,6\6\66558e8c8eaaa55dbee072050ba114978a462854
-=
-week3/coin.py,6\c\6cb48189894eff19ddb99d9c128964517484057c
 =
 week2/7569.py,8\8\884ce3385eff790a208af40a215b57cb3518b8f6
 B

@@ -1,7 +1,7 @@
 import sys
 from collections import deque
 
-INF=int(1e9)
+INF=int(100)
 
 
 #다익스트라는 bfs 에서 무엇이 추가된 것일까
@@ -33,6 +33,10 @@ for k in range(1, num + 1):
     for a in range(1, num + 1):
         for b in range(1, num + 1):
             graph[a][b] = min(graph[a][b], graph[a][k] + graph[k][b])
+            print(graph)
+            print()
+        print()
+
 
 # 수행된 결과를 출력
 for a in range(1, num + 1):
