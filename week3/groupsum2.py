@@ -6,39 +6,31 @@ for _ in range(N):
     numlist.append(list(map(int, sys.stdin.readline().split())))
 
 print(numlist)
-cumulative_sum = [[] for _ in range(N)]
 
 
+cumulative_sum = [[0 for _ in range(N)] for _ in range(N)]
 for i in range(N):
-    current_sum = 0
-    for num in numlist[i]:
-        current_sum += num
-        cumulative_sum[i].append(current_sum)
+    for j in range(N):
+        cumulative_sum[i][j] = numlist[i][j]
+        if i > 0: cumulative_sum[i][j] += cumulative_sum[i-1][j]
+        if j > 0: cumulative_sum[i][j] += cumulative_sum[i][j-1]
+        if i > 0 and j > 0: cumulative_sum[i][j] -= cumulative_sum[i-1][j-1]
 
-print(cumulative_sum)
+# 각 쿼리에 대한 구간 합 계산
+for i in range(tc):
+    for query in map(int, sys.stdin.readline().split()):
+        S_x, S_y, E_x, E_y = query
 
+        # 좌표는 0부터 시작하므로, 인덱스 조정
+        S_x -= 1
+        S_y -= 1
+        E_x -= 1
+        E_y -= 1
 
-for _ in range(tc):
-    S_x,S_y,E_x,E_y=(map(int, sys.stdin.readline().split()))
-    print(S_x,S_y,E_x,E_y)
-    if S_x==E_x and S_y==E_y: #좌표가 같을때 둘중에 하나 그냥 출력
-        print(numlist[S_x][S_y])
-    elif S_x<E_x and S_y==E_y: # y 좌표가 같을때
-        print()
-    elif S_y<E_y and S_x==E_x: # x 좌표만 같으면 y값 다 더해주면 됨
-        print()
-    else:  #그냥 다를 경우.
-        print()
+        # 누적합을 이용한 구간 합 계산
+        range_sum = cumulative_sum[E_x][E_y]
+        if S_x > 0: range_sum -= cumulative_sum[S_x-1][E_y]
+        if S_y > 0: range_sum -= cumulative_sum[E_x][S_y-1]
+        if S_x > 0 and S_y > 0: range_sum += cumulative_sum[S_x-1][S_y-1]
 
-    # S_index-=1
-    # E_index-=1
-    #
-    # if S_index==E_index:
-    #     range_sum=numlist[S_index]
-    # elif S_index == 0:
-    #     range_sum = cumulative_sum[E_index]
-    # else:
-    #     range_sum = cumulative_sum[E_index] - cumulative_sum[S_index - 1]
-
-    # print(range_sum)
-
+        print(f"Query {query}: Sum = {range_sum}")
