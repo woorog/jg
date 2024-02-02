@@ -16,3 +16,6 @@ for i in range(N):
 
 
 print(max(twodp[N-1],onedp[N-1],nodp[N-1]))
+
+
+listnum=sys.stdin.readline()

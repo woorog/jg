@@ -13,8 +13,6 @@ H
 week2/minspanningtree.py,5\5\551ce5a999dcb297717b6604b7796636213bba9a
 E
 week2/escapewater_.py,1\f\1fef1fe97387b5fd8a2e2ca57cb850a590748066
-?
-week2/dfsbfs.py,4\0\407a253880cff478acc6877136f08dc8656d83ed
 >
 week2/test2.py,4\d\4d49dfe36814b48ea9628ace1251361ae9608e26
 I
@@ -27,3 +25,7 @@ A
 week2/temp.py,f\b\fb4874b22d82b956df1414c7a8f97d2fca3a14cf
 8
 code.iml,b\e\beb951213945bb3dc483057da744dbf92f1b5196
+@
+week3/1946new.py,9\0\90568fa7a6246137787b040beaaeb48e1318a33c
+@
+week3/cardsum.py,e\d\ed9c565246965aaf58fbd665b54020afd9132139
