@@ -54,7 +54,7 @@ for member_group in member:
         # DFS로 멤버의 그래프 연결 탐색
         if g.dfs(member_id, visited, kill):
             count += 1
-            break  # kill 리스트의 요소를 발견하면 이 멤버 그룹에 대한 탐색 중단
+            break
 
 print(tc-count)
 

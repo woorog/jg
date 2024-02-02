@@ -9,11 +9,12 @@ for i in range(N):
 def bfs():
     # 방문 체크 및 거리 계산을 위한 3차원 배열 초기화
     visited = [[[0]*2 for _ in range(M)] for __ in range(N)]
+    print(visited)
     queue = deque()
     # (x, y, 벽을 부순 상태)
     queue.append((0, 0, 0))
     visited[0][0][0] = 1  # 시작 위치 방문 체크
-
+    print(visited)
     # 상, 하, 좌, 우 이동 방향
     dx = [0, 1, 0, -1]
     dy = [1, 0, -1, 0]

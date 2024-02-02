@@ -1,26 +1,12 @@
 
 >
 week2/14888.py,2\0\2070a13b246b8d006a7aad9f07931fb0e1016f64
-F
-week2/treetraversal.py,5\3\53d66511b06a9ab12ea9cb17f4358387d80312d5
->
-week2/11724.py,0\8\081eb1e7276a80b0540724fb343d34f6560ad05c
-=
-week2/1_25.py,3\c\3cb3f6872e4ff739f531da8e84448be883798898
-?
-week2/1_25_3.py,1\b\1b5ef851b664653d68562906b8f6623e36bd5298
-H
-week2/minspanningtree.py,5\5\551ce5a999dcb297717b6604b7796636213bba9a
 E
 week2/escapewater_.py,1\f\1fef1fe97387b5fd8a2e2ca57cb850a590748066
 >
 week2/test2.py,4\d\4d49dfe36814b48ea9628ace1251361ae9608e26
-I
-week2/findtreesparents.py,9\a\9a04605b7510140b198c8905ac176b0a3429dab8
 >
 week2/virus.py,f\0\f0962466be380d3d9f340a98e9e6498502d9d965
-A
-week2/calsplit.py,6\8\683a4e0b0416a254e344e0ab0aa14acb493ecb31
 =
 week2/temp.py,f\b\fb4874b22d82b956df1414c7a8f97d2fca3a14cf
 8
