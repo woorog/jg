@@ -31,7 +31,7 @@ stop1, stop2 = map(int, input().split())  # 반드시 거쳐야 하는 두 정�
 path1 = dijkstra(1, stop1) + dijkstra(stop1, stop2) + dijkstra(stop2, N)  # 경로 1: 1 -> stop1 -> stop2 -> N
 path2 = dijkstra(1, stop2) + dijkstra(stop2, stop1) + dijkstra(stop1, N)  # 경로 2: 1 -> stop2 -> stop1 -> N
 
-# 두 경로 중 하나라도 계산된 최단 거리가 초기값(0xffffff)과 같거나 크면, 경로가 없는 것으로 간주하여 -1 출력
+# 두 경로 중 하나라도 계산된 최단 거리가 초기값(0xff`ffff)과 같거나 크면, 경로가 없는 것으로 간주하여 -1 출력
 if path1 >= 0xffffff and path2 >= 0xffffff:
     print(-1)
 else:
