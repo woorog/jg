@@ -1,0 +1,354 @@
+<changelist name="2024-02-06_오후_1_59,_업데이트_전에_커밋되지_않은_변경_내용_[Changes]" date="1707195602994" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/2024-02-06_오후_1_59,_업데이트_전에_커밋되지_않은_변경_내용_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="2024-02-06 오후 1:59, 업데이트 전에 커밋되지 않은 변경 내용 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/5/3/53d66511b06a9ab12ea9cb17f4358387d80312d5" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/e/d/ed9c565246965aaf58fbd665b54020afd9132139" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/6/c/6c8c7579a6258f983f8eb8fd8bd1f6d1ccc04dbc" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/b/5/b5c299bb462c17bcc2ac5be523e870e9b4c62443" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/a/9/a9ecc63309bbedd2d5719b104c9c96f51c0c91f2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/7/6/76284b0412a2598fc269e68646c4e1c565d09195" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/7/b/7ba699b80e69436697fada6ae693f3107bcf3425" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/1/7/1768534cda98e28085db8e936bb21e7da339bc39" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/9/a/9a04605b7510140b198c8905ac176b0a3429dab8" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/5/5/551ce5a999dcb297717b6604b7796636213bba9a" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/6/8/683a4e0b0416a254e344e0ab0aa14acb493ecb31" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/4/d/4d49dfe36814b48ea9628ace1251361ae9608e26" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/4/0/407a253880cff478acc6877136f08dc8656d83ed" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/f/0/f0962466be380d3d9f340a98e9e6498502d9d965" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/1/c/1cb4da8a36834788551d556338147c0f74d4bdd4" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/5/7/5722be991431ce29ae07555c640f41fe712d7c64" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/9/0/901b16c9474a0921655843ba5d8eb80193ae0c03" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/d/3/d324961f60062fa8947af4a72d921575c390bf61" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/8/8/884ce3385eff790a208af40a215b57cb3518b8f6" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/e/c/ecc784e61859092427cfc34af9fcdd43e14500d8" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/9/0/901b16c9474a0921655843ba5d8eb80193ae0c03" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/6/0/60350fca9886b0b10b2f47d82174a408007d8003" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/1/3/1392c38064bf1b0b26c607dfc31fc20b9c084e8a" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/9/0/90568fa7a6246137787b040beaaeb48e1318a33c" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/2/0/2070a13b246b8d006a7aad9f07931fb0e1016f64" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/d/3/d324961f60062fa8947af4a72d921575c390bf61" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/4/d/4d49dfe36814b48ea9628ace1251361ae9608e26" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/1/b/1b5ef851b664653d68562906b8f6623e36bd5298" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/4/0/407a253880cff478acc6877136f08dc8656d83ed" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/5/8/582586b5255a3e50435c9825f83fb3812331599d" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/f/b/fb4874b22d82b956df1414c7a8f97d2fca3a14cf" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/a/9/a9ecc63309bbedd2d5719b104c9c96f51c0c91f2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/5/3/53d66511b06a9ab12ea9cb17f4358387d80312d5" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/5/5/551ce5a999dcb297717b6604b7796636213bba9a" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/e/d/ed9c565246965aaf58fbd665b54020afd9132139" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/7/6/76284b0412a2598fc269e68646c4e1c565d09195" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/1/c/1cb4da8a36834788551d556338147c0f74d4bdd4" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/b/5/b5c299bb462c17bcc2ac5be523e870e9b4c62443" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/9/a/9a04605b7510140b198c8905ac176b0a3429dab8" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/6/0/60350fca9886b0b10b2f47d82174a408007d8003" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/3/9/396a37604e3640a3c41915985464ac869ec9407f" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/2/0/2070a13b246b8d006a7aad9f07931fb0e1016f64" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/f/b/fb4874b22d82b956df1414c7a8f97d2fca3a14cf" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/5/8/582586b5255a3e50435c9825f83fb3812331599d" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/3/c/3cb3f6872e4ff739f531da8e84448be883798898" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/1/b/1b5ef851b664653d68562906b8f6623e36bd5298" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/7/b/7ba699b80e69436697fada6ae693f3107bcf3425" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/0/8/081eb1e7276a80b0540724fb343d34f6560ad05c" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/6/c/6c8c7579a6258f983f8eb8fd8bd1f6d1ccc04dbc" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/1/f/1f5ddc0846a7c54eae0ab5892f0d6db2c8aad767" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/1/f/1f5ddc0846a7c54eae0ab5892f0d6db2c8aad767" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/3/f/3f55fccb26b98ec8f485ec37f4f8f8d7730e9bdf" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/0/6/06da2b19abcfb6fb5709d275b8362c99641312cd" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/0/8/081eb1e7276a80b0540724fb343d34f6560ad05c" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/3/f/3f55fccb26b98ec8f485ec37f4f8f8d7730e9bdf" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/5/6/56395178a6d04d47b57115427308ca0fd4cbbcda" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/1/3/1392c38064bf1b0b26c607dfc31fc20b9c084e8a" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/1/f/1fef1fe97387b5fd8a2e2ca57cb850a590748066" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/5/6/56395178a6d04d47b57115427308ca0fd4cbbcda" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/0/6/06da2b19abcfb6fb5709d275b8362c99641312cd" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/9/0/90568fa7a6246137787b040beaaeb48e1318a33c" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/1/f/1fef1fe97387b5fd8a2e2ca57cb850a590748066" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/e/c/ecc784e61859092427cfc34af9fcdd43e14500d8" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/3/9/396a37604e3640a3c41915985464ac869ec9407f" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/f/0/f0962466be380d3d9f340a98e9e6498502d9d965" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/1/7/1768534cda98e28085db8e936bb21e7da339bc39" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/securityhotspotstore/3/c/3cb3f6872e4ff739f531da8e84448be883798898" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/8/8/884ce3385eff790a208af40a215b57cb3518b8f6" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/5/7/5722be991431ce29ae07555c640f41fe712d7c64" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/6/8/683a4e0b0416a254e344e0ab0aa14acb493ecb31" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+</changelist>
