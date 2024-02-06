@@ -29,8 +29,6 @@ F
 week3/test1.py,7\b\7ba699b80e69436697fada6ae693f3107bcf3425
 >
 week3/test3.py,5\7\5722be991431ce29ae07555c640f41fe712d7c64
-=
-week2/test.py,0\0\00845b0562a8de72c170ce76efc34666c4fcdc50
 >
 week2/maze1.py,5\6\56395178a6d04d47b57115427308ca0fd4cbbcda
 ?

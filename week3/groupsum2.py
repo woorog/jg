@@ -5,8 +5,6 @@ numlist=[]
 for _ in range(N):
     numlist.append(list(map(int, sys.stdin.readline().split())))
 
-print(numlist)
-
 
 cumulative_sum = [[0 for _ in range(N)] for _ in range(N)]
 for i in range(N):
@@ -18,8 +16,9 @@ for i in range(N):
 
 # 각 쿼리에 대한 구간 합 계산
 for i in range(tc):
-    for query in map(int, sys.stdin.readline().split()):
-        S_x, S_y, E_x, E_y = query
+    query=[]
+    query.append(map(int, sys.stdin.readline().split()))
+    for  S_x, S_y, E_x, E_y in query:
 
         # 좌표는 0부터 시작하므로, 인덱스 조정
         S_x -= 1
@@ -33,4 +32,5 @@ for i in range(tc):
         if S_y > 0: range_sum -= cumulative_sum[E_x][S_y-1]
         if S_x > 0 and S_y > 0: range_sum += cumulative_sum[S_x-1][S_y-1]
 
-        print(f"Query {query}: Sum = {range_sum}")
+        print(range_sum)
+
