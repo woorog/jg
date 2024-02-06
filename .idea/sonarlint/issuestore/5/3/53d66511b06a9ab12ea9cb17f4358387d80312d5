@@ -1,8 +1,0 @@
-
-Lpython:S1066!"/Merge this if statement with the enclosing one.(¿ç»ıÿÿÿÿ
-Gpython:S1066$"/Merge this if statement with the enclosing one.(¤éÙ¾
-upython:S5886"]Return a value of type "Node" instead of "NoneType" or update function "heresNode" type hint.(ò¤Ÿù
-ipython:S100"MRename method "heresNode" to match the regular expression ^[a-z_][a-z0-9_]*$.(¶úÔÿÿÿÿÿ
-jpython:S1542("RRename function "preorderTrav" to match the regular expression ^[a-z_][a-z0-9_]*$.(Êßã
-npython:S15421"QRename function "inorderTrav" to match the regular expression ^[a-z_][a-z0-9_]*$.(‚–¦ıÿÿÿÿ
-jpython:S1542:"SRename function "postorderTrav" to match the regular expression ^[a-z_][a-z0-9_]*$.(ı©=
