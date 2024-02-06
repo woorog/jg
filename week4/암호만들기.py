@@ -8,7 +8,10 @@ alist=list(map(str,sys.stdin.readline().split()))
 alist=sorted(alist)
 
 combi=(list(itertools.combinations(alist,N)))
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/test
 ans=[]
 realans=[]
 for i in combi:
